@@ -1,0 +1,21 @@
+[playlist]
+numberofentries=6
+File1=http://46.165.221.150:8253
+Title1=(#1 - 1/150) Radio Caroline 259 Gold. Your Real and Only  Rock and Album Station  from - Breskens - Holland
+Length1=-1
+File2=http://5.79.83.230:8220
+Title2=(#2 - 4/500) Radio Caroline 259 Gold. Your Real and Only  Rock and Album Station  from - Breskens - Holland
+Length2=-1
+File3=http://5.79.83.230:8253
+Title3=(#3 - 3/150) Radio Caroline 259 Gold. Your Real and Only  Rock and Album Station  from - Breskens - Holland
+Length3=-1
+File4=http://94.75.235.38:8220
+Title4=(#4 - 6/100) Radio Caroline 259 Gold. Your Real and Only  Rock and Album Station  from - Breskens - Holland
+Length4=-1
+File5=http://46.165.208.21:8253
+Title5=(#5 - 9/150) Radio Caroline 259 Gold. Your Real and Only  Rock and Album Station  from - Breskens - Holland
+Length5=-1
+File6=http://94.75.235.38:8253
+Title6=(#6 - 38/80) Radio Caroline 259 Gold. Your Real and Only  Rock and Album Station  from - Breskens - Holland
+Length6=-1
+Version=2
