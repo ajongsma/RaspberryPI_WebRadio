@@ -36,6 +36,17 @@ network={
 - sudo ifdown wlan0
 - sudo ifup wlan0
 
+##### Airplay Server
+
+###### Audio test
+- alsamixer
+- speaker-test -t sine
+
+###### Airplay Server
+- sudo apt-get install  libao-dev libssl-dev git avahi-utils libwww-perl
+- sudo apt-get install libcrypt-openssl-rsa-perl libio-socket-inet6-perl  libmodule-build-perl
+- 
+
 ###### Error - perl: warning: Setting locale failed.
 - sudo dpkg-reconfigure locales
   - Enable: en_GB.UTF-8
