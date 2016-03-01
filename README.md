@@ -40,10 +40,6 @@ network={
 - alsamixer
 - speaker-test -t sine
 
-###### Airplay Server
-- sudo apt-get install rplay-server
-- 
-
 ###### Error - perl: warning: Setting locale failed.
 - sudo dpkg-reconfigure locales
   - Enable: en_GB.UTF-8
