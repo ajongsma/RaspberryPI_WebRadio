@@ -21,9 +21,9 @@ sudo raspi-config
 - sudo reboot
 
 ##### Error - perl: warning: Setting locale failed.
-- Run: sudo dpkg-reconfigure locales
-- Enable: en_GB.UTF-8
-- Enable: en_US.UTF-8 UTF-8
+- sudo dpkg-reconfigure locales
+-- Enable: en_GB.UTF-8
+-- Enable: en_US.UTF-8 UTF-8
 
 ###### Driver(s)
 /etc/modules
