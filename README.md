@@ -16,9 +16,14 @@ PW: raspberry
 sudo raspi-config
 
 ###### Upgrade Linux kernel
-sudo rpi-update
-sync
-sudo reboot
+- sudo rpi-update
+- sync
+- sudo reboot
+
+##### Error - perl: warning: Setting locale failed.
+- Run: sudo dpkg-reconfigure locales
+- Enable: en_GB.UTF-8
+- Enable: en_US.UTF-8 UTF-8
 
 ###### Driver(s)
 /etc/modules
