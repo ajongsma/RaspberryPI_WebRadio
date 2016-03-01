@@ -20,5 +20,11 @@ sudo reboot
 ###### Blacklisted drivers
 /etc/modprobe.d/raspi-blacklist.conf
 
-###### AddOns
+# AddOns
+###### mplayer
 sudo apt-get install mplayer
+
+###### MPD - /etc/mpd.conf
+sudo apt-get update
+sudo apt-get install mpd
+sudo service mpd restart
