@@ -43,8 +43,7 @@ network={
 - speaker-test -t sine
 
 ###### Airplay Server
-- sudo apt-get install  libao-dev libssl-dev git avahi-utils libwww-perl
-- sudo apt-get install libcrypt-openssl-rsa-perl libio-socket-inet6-perl  libmodule-build-perl
+- sudo apt-get install rplay-server
 - 
 
 ###### Error - perl: warning: Setting locale failed.
