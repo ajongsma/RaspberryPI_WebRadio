@@ -36,8 +36,6 @@ network={
 - sudo ifdown wlan0
 - sudo ifup wlan0
 
-##### Airplay Server
-
 ###### Audio test
 - alsamixer
 - speaker-test -t sine
