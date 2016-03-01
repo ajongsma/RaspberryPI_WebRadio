@@ -27,10 +27,12 @@ sudo raspi-config
 - sudo iwlist wlan0 scan | grep ESSID
 - sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
-```network={
+```
+network={
     ssid="The_ESSID_from_earlier"
     psk="Your_wifi_password"
-}```
+}
+```
 
 ###### Error - perl: warning: Setting locale failed.
 - sudo dpkg-reconfigure locales
