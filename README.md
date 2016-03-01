@@ -12,6 +12,9 @@ ssh volumio.local -l volumio
 UID: pi
 PW: raspberry
 
+- uname -r
+  - 4.1.17-v7+
+
 ###### Initial Raspberry Pi configuration
 sudo raspi-config
 
