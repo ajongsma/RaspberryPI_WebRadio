@@ -37,14 +37,7 @@ sudo service mpd restart
 
 
 # Errors Raspbian (clean image)
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = "en_US.UTF-8",
-	LC_CTYPE = "UTF-8",
-	LANG = "en_GB.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_GB.UTF-8").
-locale: Cannot set LC_CTYPE to default locale: No such file or directory
-locale: Cannot set LC_MESSAGES to default locale: No such file or directory
-locale: Cannot set LC_ALL to default locale: No such file or directory
+##### perl: warning: Setting locale failed.
+- Run: sudo dpkg-reconfigure locales
+- Enable: en_GB.UTF-8
+- Enable: en_US.UTF-8 UTF-8
