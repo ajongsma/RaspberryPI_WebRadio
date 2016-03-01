@@ -8,7 +8,13 @@ ssh volumio.local -l volumio
 /var/lib/mpd/music/WEBRADIO
 
 
-# Other
+# Other / raspbian
+UID: pi
+PW: raspberry
+
+###### Initial Raspberry Pi configuration
+sudo raspi-config
+
 ###### Upgrade Linux kernel
 sudo rpi-update
 sync
