@@ -33,6 +33,8 @@ network={
     psk="Your_wifi_password"
 }
 ```
+- sudo ifdown wlan0
+- sudo ifup wlan0
 
 ###### Error - perl: warning: Setting locale failed.
 - sudo dpkg-reconfigure locales
