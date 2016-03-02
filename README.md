@@ -69,22 +69,21 @@ network={
 ###### samba
 - sudo apt-get -y install samba samba-common-bin
 
-###### Folders etc.
-- sudo mkdir -p /var/www
-------
+###### Git
+- apt-get -y install git-core
 
 ###### Install Volumio
-- apt-get -y install git-core
 - export GIT_SSL_NO_VERIFY=1
-- rm -rf /var/www
-- git clone https://github.com/volumio/Volumio-WebUI.git /var/www
-- chmod 775 /var/www/_OS_SETTINGS/etc/rc.local
-- chmod 755 /var/www/_OS_SETTINGS/etc/php5/mods-available/apc.ini
-- chmod -R 777 /var/www/command/
-- chmod -R 777 /var/www/db/
-- chmod -R 777 /var/www/inc/
-- cp -arp /var/www/_OS_SETTINGS/etc/ /
-- cp -arp /var/www/_OS_SETTINGS/home/ /
+- sudo rm -rf /var/www
+- sudo git clone https://github.com/volumio/Volumio-WebUI.git /var/www
+- sudo chmod 755 /var/www/_OS_SETTINGS/etc/rc.local
+- sudo chmod 755 /var/www/_OS_SETTINGS/etc/php5/mods-available/apc.ini
+- sudo chmod -R 777 /var/www/command/
+- sudo chmod -R 777 /var/www/db/
+- sudo chmod -R 777 /var/www/inc/
+- sudo cp -arp /var/www/_OS_SETTINGS/etc/ /
+- sudo cp -arp /var/www/_OS_SETTINGS/home/ /
+- sudo reboot
 
 ###### Audio test
 - alsamixer
@@ -99,6 +98,8 @@ network={
 ```
 volumio ALL=(ALL) NOPASSWD: ALL
 ```
+
+
 
 
 ###### Driver(s)
