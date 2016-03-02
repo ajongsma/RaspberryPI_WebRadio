@@ -63,6 +63,9 @@ network={
 ###### MPD (media player deamon)
 - sudo apt-get -y install alsa-utils mpd
 
+###### MPC (command-line tool to interface MPD)
+apt-get install mpc
+
 ###### nginx, mysql and sqlite
 - sudo apt-get -y install nginx sqlite3 php5-fpm php5-curl php5-sqlite php5-cli
 
