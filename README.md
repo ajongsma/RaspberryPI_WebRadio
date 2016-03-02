@@ -34,6 +34,7 @@ sudo raspi-config
 
 ###### Upgrade Distro
 - sudo apt-get -y update
+- sudo apt-get -y upgrade
 
 ###### Enable WiFi
 - sudo iwlist wlan0 scan | grep ESSID
@@ -53,8 +54,9 @@ network={
 - sudo ifup wlan0
 
 ###### Install packages
-- apg-get install nginx
+- sudo apt-get -y install alsa-utils mpd
 
+------
 
 ###### Install Volumio
 - apt-get -y install git-core
