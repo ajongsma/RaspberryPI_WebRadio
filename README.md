@@ -53,8 +53,16 @@ network={
 - sudo ifdown wlan0
 - sudo ifup wlan0
 
-###### Install packages
+##### Install packages
+
+###### MPD (media player deamon)
 - sudo apt-get -y install alsa-utils mpd
+
+###### nginx, mysql and sqlite
+- sudo apt-get -y install nginx sqlite3 php5-fpm php5-curl php5-sqlite php5-cli
+
+###### samba
+- sudo apt-get -y install samba samba-common-bin
 
 ------
 
