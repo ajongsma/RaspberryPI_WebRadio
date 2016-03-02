@@ -53,10 +53,6 @@ network={
 - alsamixer
 - speaker-test -t sine
 
-###### Error - perl: warning: Setting locale failed.
-- sudo dpkg-reconfigure locales
-  - Enable: en_GB.UTF-8
-  - Enable: en_US.UTF-8 UTF-8
 
 ###### Driver(s)
 /etc/modules
