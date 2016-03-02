@@ -35,24 +35,6 @@ sudo raspi-config
 ###### Upgrade Distro
 - sudo apt-get -y update
 
-###### Install packages
-- apg-get install nginx
-
-
-###### Install Volumio
-- apt-get -y install git-core
-- export GIT_SSL_NO_VERIFY=1
-- rm -rf /var/www
-- git clone https://github.com/volumio/Volumio-WebUI.git /var/www
-- chmod 775 /var/www/_OS_SETTINGS/etc/rc.local
-- chmod 755 /var/www/_OS_SETTINGS/etc/php5/mods-available/apc.ini
-- chmod -R 777 /var/www/command/
-- chmod -R 777 /var/www/db/
-- chmod -R 777 /var/www/inc/
-- cp -arp /var/www/_OS_SETTINGS/etc/ /
-- cp -arp /var/www/_OS_SETTINGS/home/ /
-
-
 ###### Enable WiFi
 - sudo iwlist wlan0 scan | grep ESSID
 - sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
@@ -69,6 +51,23 @@ network={
 ```
 - sudo ifdown wlan0
 - sudo ifup wlan0
+
+###### Install packages
+- apg-get install nginx
+
+
+###### Install Volumio
+- apt-get -y install git-core
+- export GIT_SSL_NO_VERIFY=1
+- rm -rf /var/www
+- git clone https://github.com/volumio/Volumio-WebUI.git /var/www
+- chmod 775 /var/www/_OS_SETTINGS/etc/rc.local
+- chmod 755 /var/www/_OS_SETTINGS/etc/php5/mods-available/apc.ini
+- chmod -R 777 /var/www/command/
+- chmod -R 777 /var/www/db/
+- chmod -R 777 /var/www/inc/
+- cp -arp /var/www/_OS_SETTINGS/etc/ /
+- cp -arp /var/www/_OS_SETTINGS/home/ /
 
 ###### Audio test
 - alsamixer
