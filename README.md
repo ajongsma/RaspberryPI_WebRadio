@@ -34,6 +34,12 @@ sudo raspi-config
 
 ###### Upgrade Distro
 - sudo apt-get -y update
+
+###### Install packages
+- apg-get install nginx
+
+
+###### Install Volumio
 - apt-get -y install git-core
 - export GIT_SSL_NO_VERIFY=1
 - rm -rf /var/www
