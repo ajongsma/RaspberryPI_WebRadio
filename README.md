@@ -81,6 +81,7 @@ network={
 - sudo chmod -R 777 /var/www/command/
 - sudo chmod -R 777 /var/www/db/
 - sudo chmod -R 777 /var/www/inc/
+- sudo chmod -R 777 /var/www/updates/
 - sudo cp -arp /var/www/_OS_SETTINGS/etc/ /
 - sudo cp -arp /var/www/_OS_SETTINGS/home/ /
 - sudo reboot
