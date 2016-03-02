@@ -89,6 +89,12 @@ apt-get install mpc
 - sudo cp -arp /var/www/_OS_SETTINGS/home/ /
 - sudo reboot
 
+###### Install Spotify
+- wget -q -O - http://apt.mopidy.com/mopidy.gpg | sudo apt-key add -
+- sudo apt-get update
+- sudo apt-get install libjson-glib-dev libao-dev libdbus-glib-1-dev libnotify-dev libsoup2.4-dev libsox-dev libspotify-dev
+- git clone git://github.com/Schnouki/spop.git ~/.config/spop
+
 ###### Audio test
 - alsamixer
 - speaker-test -t sine
