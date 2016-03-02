@@ -53,6 +53,16 @@ network={
 - alsamixer
 - speaker-test -t sine
 
+###### Add User
+- sudo su -
+- adduser volumio
+- usermod -a -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,spi,i2c,gpio volumio
+- sudo visudo
+  - add at the bottom of the file
+```
+volumio ALL=(ALL) NOPASSWD: ALL
+```
+
 
 ###### Driver(s)
 /etc/modules
