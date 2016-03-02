@@ -13,10 +13,19 @@ UID: pi
 PW: raspberry
 
 - uname -r
-  - 4.1.17-v7+
+  - 4.1.18-v7+
 
 ###### Initial Raspberry Pi configuration
 sudo raspi-config
+- Internationalisation Options
+  - Change Locale
+    - Add: en_US.UTF-8 UTF-8
+    - Change to: en_US.UTF-8
+  - Change TimeZone
+    - Europe
+      - Amsterdam
+  - Change WiFi Country
+    - NL
 
 ###### Upgrade Linux kernel
 - sudo rpi-update
@@ -28,6 +37,10 @@ sudo raspi-config
 - sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
 ```
+country=NL
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
 network={
     ssid="The_ESSID_from_earlier"
     psk="Your_wifi_password"
