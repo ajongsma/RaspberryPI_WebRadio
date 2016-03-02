@@ -64,7 +64,7 @@ network={
 - sudo apt-get -y install alsa-utils mpd
 
 ###### MPC (command-line tool to interface MPD)
-apt-get install mpc
+- apt-get install mpc
 
 ###### nginx, mysql and sqlite
 - sudo apt-get -y install nginx sqlite3 php5-fpm php5-curl php5-sqlite php5-cli
@@ -89,11 +89,12 @@ apt-get install mpc
 - sudo cp -arp /var/www/_OS_SETTINGS/home/ /
 - sudo reboot
 
-###### Install Spotify
+###### Install Spotify (https://github.com/Schnouki/spop)
 - wget -q -O - http://apt.mopidy.com/mopidy.gpg | sudo apt-key add -
 - sudo apt-get update
 - sudo apt-get install libjson-glib-dev libao-dev libdbus-glib-1-dev libnotify-dev libsoup2.4-dev libsox-dev libspotify-dev
 - git clone git://github.com/Schnouki/spop.git ~/.config/spop
+- cp ~/.config/spop/spopd.conf.sample ~/.config/spop/spopd.conf
 
 ###### Audio test
 - alsamixer
