@@ -7,13 +7,18 @@ ssh volumio.local -l volumio
 ###### Path on Volumio
 /var/lib/mpd/music/WEBRADIO
 
+-----
 
-# Other / raspbian
+# Manual install Raspbian with Volumio
 UID: pi
 PW: raspberry
 
 - uname -r
   - 4.1.18-v7+
+
+###### Resize partition
+- sudo raspi-config
+  - expand filesystem
 
 ###### Initial Raspberry Pi configuration
 sudo raspi-config
@@ -64,6 +69,8 @@ network={
 ###### samba
 - sudo apt-get -y install samba samba-common-bin
 
+###### Folders etc.
+- sudo mkdir -p /var/www
 ------
 
 ###### Install Volumio
