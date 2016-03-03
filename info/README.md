@@ -120,20 +120,26 @@ volumio ALL=(ALL) NOPASSWD: ALL
 
 
 ###### Driver(s)
-/etc/modules
+- /etc/modules
 
 ###### Blacklisted drivers
-/etc/modprobe.d/raspi-blacklist.conf
+- /etc/modprobe.d/raspi-blacklist.conf
 
 # AddOns
 ###### mplayer
-sudo apt-get install mplayer
+- sudo apt-get install mplayer
 
 ###### MPD - /etc/mpd.conf
-sudo apt-get update
-sudo apt-get install mpd
-sudo service mpd restart
+- sudo apt-get update
+- sudo apt-get install mpd
+- sudo service mpd restart
 
 
 # Errors Raspbian (clean image)
-dpkg-reconfigure localepurge
+- sudo apt-get update
+- sudo apt-get upgrade
+- sudo apt-get dist-upgrade
+--? sudo apt-get install raspberrypi-ui-mods
+- sudo rpi-update
+
+- dpkg-reconfigure localepurge
