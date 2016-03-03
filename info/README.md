@@ -141,7 +141,7 @@ volumio ALL=(ALL) NOPASSWD: ALL
 - sudo apt-get dist-upgrade
 - sudo shutdown -r now
 - sudo apt-get autoremove
-- -? sudo apt-get install raspberrypi-ui-mods
 - sudo rpi-update
 
+- -? sudo apt-get install raspberrypi-ui-mods
 - dpkg-reconfigure localepurge
