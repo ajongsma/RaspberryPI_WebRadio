@@ -119,8 +119,6 @@ volumio ALL=(ALL) NOPASSWD: ALL
 ```
 
 
-
-
 ###### Driver(s)
 /etc/modules
 
@@ -138,7 +136,4 @@ sudo service mpd restart
 
 
 # Errors Raspbian (clean image)
-##### perl: warning: Setting locale failed.
-- Run: sudo dpkg-reconfigure locales
-- Enable: en_GB.UTF-8
-- Enable: en_US.UTF-8 UTF-8
+dpkg-reconfigure localepurge
