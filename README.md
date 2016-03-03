@@ -9,7 +9,7 @@ ssh volumio.local -l volumio
 
 -----
 
-Edit station.urls to update the stations
-Run create_playlists.py to create playlists
+- Edit station.urls to update the stations
+- Run create_playlists.py to create playlists
 
 Optional: add pls-files in to the folder import-playlists to automatically take these into account for the export folder "playlists"
