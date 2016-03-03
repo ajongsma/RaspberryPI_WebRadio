@@ -51,7 +51,11 @@ network={
 - sudo ifdown wlan0
 - sudo ifup wlan0
 
-##### Install packages
+##### Turn off Console Blanking
+- sudo nano /etc/kbd/config
+```
+BLANK_TIME=0
+```
 
 ###### MPD (media player deamon)
 - sudo apt-get -y install alsa-utils mpd
