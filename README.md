@@ -8,6 +8,7 @@ ssh volumio.local -l volumio
 /var/lib/mpd/music/WEBRADIO
 
 -----
+# HowTo Use
 
 - Edit station.urls to update the stations
 - Run create_playlists.py to create playlists
