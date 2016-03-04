@@ -144,6 +144,10 @@ PermitRootLogin no
 - sudo apt-get install mpd
 - sudo service mpd restart
 
+###### BlueTooth
+- bluetoothctl -a
+- scan on
+- pair <keyboard MAC>
 
 # Errors Raspbian (clean image)
 - sudo apt-get update
