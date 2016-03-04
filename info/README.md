@@ -46,6 +46,7 @@ update_config=1
 network={
     ssid="The_ESSID_from_earlier"
     psk="Your_wifi_password"
+    key_mgmt=WPA-PSK
 }
 ```
 - sudo ifdown wlan0
