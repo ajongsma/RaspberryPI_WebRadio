@@ -127,6 +127,7 @@ volumio ALL=(ALL) NOPASSWD: ALL
 ```
 PermitRootLogin no
 ```
+- sudo service ssh reload
 
 ###### Driver(s)
 - /etc/modules
