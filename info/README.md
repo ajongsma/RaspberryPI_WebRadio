@@ -65,6 +65,9 @@ BLANK_TIME=0
 ###### Install Git
 - sudo apt-get -y install git-core
 
+###### Install ChkConfig
+- sudo apt-get -y chkconfig
+
 ###### Shairport-Sync (https://github.com/mikebrady/shairport-sync)
 - sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev
 - sudo apt-get -y install avahi-daemon libavahi-client-dev
