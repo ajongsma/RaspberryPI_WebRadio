@@ -124,7 +124,7 @@ volumio ALL=(ALL) NOPASSWD: ALL
 
 ###### Disable root to use SSH
 - sudo nano /etc/ssh/sshd_config
-- ```
+```
 PermitRootLogin no
 ```
 
