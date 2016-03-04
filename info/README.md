@@ -62,6 +62,44 @@ BLANK_TIME=0
 
 -----
 
+###### Install Git
+- sudo apt-get -y install git-core
+
+###### Shairport-Sync (https://github.com/mikebrady/shairport-sync)
+- sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev
+- sudo apt-get -y install avahi-daemon libavahi-client-dev
+- sudo apt-get -y install libssl-dev
+- cd ~
+- git clone https://github.com/mikebrady/shairport-sync.git
+- cd shairport-sync
+- autoreconf -i -f
+- ./configure --with-alsa --with-avahi --with-ssl=openssl --with-metadata --with-systemd
+- make
+- getent group shairport-sync &>/dev/null || sudo groupadd -r shairport-sync >/dev/null
+- getent passwd shairport-sync &> /dev/null || sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync >/dev/null
+- sudo make install
+- sudo systemctl enable shairport-sync
+
+- sudo nano /etc/shairport-sync.conf
+```
+general = {
+  name = "Pi";
+};
+
+alsa = {
+  output_device = "hw:1";
+  mixer_control_name = "PCM";
+};
+```
+- sudo systemctl start shairport-sync
+- sudo systemctl enable shairport-sync
+
+
+
+
+
+
+
 ###### MPD (media player deamon)
 - sudo apt-get -y install alsa-utils mpd mpc
 
@@ -73,8 +111,7 @@ BLANK_TIME=0
 ###### samba
 - sudo apt-get -y install samba samba-common-bin
 
-###### Git
-- apt-get -y install git-core
+
 
 ###### Install Volumio
 - export GIT_SSL_NO_VERIFY=1
@@ -90,20 +127,6 @@ BLANK_TIME=0
 - sudo cp -arp /var/www/_OS_SETTINGS/home/ /
 - sudo reboot
 
-###### Shairport-Sync (https://github.com/mikebrady/shairport-sync)
-- sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev
-- sudo apt-get -y install avahi-daemon libavahi-client-dev
-- sudo apt-get -y install libssl-dev
-- sudo apt-get -y install libpolarssl-dev
-- sudo apt-get install -y libsoxr-dev
-- git clone https://github.com/mikebrady/shairport-sync.git ~/shairport-sync
-- cd ~/shairport-sync
-- autoreconf -i -f
-- ./configure --with-alsa --with-avahi --with-ssl=openssl --with-metadata --with-systemd
-- make
-- getent group shairport-sync &>/dev/null || sudo groupadd -r shairport-sync >/dev/null
-- getent passwd shairport-sync &> /dev/null || sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync >/dev/null
-- sudo systemctl enable shairport-sync
 
 ###### Install Spotify (https://github.com/Schnouki/spop)
 - wget -q -O - http://apt.mopidy.com/mopidy.gpg | sudo apt-key add -
