@@ -25,14 +25,14 @@ sudo raspi-config
   - Change WiFi Country
     - NL
 
-###### Upgrade Linux kernel
-- sudo rpi-update
-- sync
-- sudo reboot
-
 ###### Upgrade Distro
 - sudo apt-get -y update
 - sudo apt-get -y upgrade
+
+###### Update the firmware
+- sudo rpi-update
+- sync
+- sudo reboot
 
 ###### Enable WiFi
 - sudo iwlist wlan0 scan | grep ESSID
@@ -51,11 +51,15 @@ network={
 - sudo ifdown wlan0
 - sudo ifup wlan0
 
+
+
 ##### Turn off Console Blanking
 - sudo nano /etc/kbd/config
 ```
 BLANK_TIME=0
 ```
+
+-----
 
 ###### MPD (media player deamon)
 - sudo apt-get -y install alsa-utils mpd
@@ -145,6 +149,7 @@ PermitRootLogin no
 - sudo service mpd restart
 
 ###### BlueTooth
+- sudo apt-get install pi-bluetooth
 - bluetoothctl -a
 - scan on
 - pair <keyboard MAC>
