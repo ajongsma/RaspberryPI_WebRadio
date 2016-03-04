@@ -91,19 +91,17 @@ alsa = {
   mixer_control_name = "PCM";
 };
 ```
+- sudo cp shairport-sync.in /etc/init.d/shairport-sync
+```
+start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi" -- -d hw:1 -t hardware -c "PCM" || return 2
+```
 - sudo systemctl start shairport-sync
 - sudo systemctl enable shairport-sync
 
 
 
-
-
-
-
 ###### MPD (media player deamon)
 - sudo apt-get -y install alsa-utils mpd mpc
-
-
 
 ###### nginx, mysql and sqlite
 - sudo apt-get -y install nginx sqlite3 php5-fpm php5-curl php5-sqlite php5-cli
