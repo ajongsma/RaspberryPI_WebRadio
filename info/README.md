@@ -149,6 +149,12 @@ PermitRootLogin no
 - scan on
 - pair <keyboard MAC>
 
+###### Blank Console
+- sudo nano /boot/cmdline.txt
+```
+consoleblank=0
+```
+
 # Errors Raspbian (clean image)
 - sudo apt-get update
 - sudo apt-get upgrade
