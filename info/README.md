@@ -122,6 +122,11 @@ BLANK_TIME=0
 volumio ALL=(ALL) NOPASSWD: ALL
 ```
 
+###### Disable root to use SSH
+- sudo nano /etc/ssh/sshd_config
+- ```
+PermitRootLogin no
+```
 
 ###### Driver(s)
 - /etc/modules
