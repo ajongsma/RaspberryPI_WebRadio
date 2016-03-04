@@ -142,6 +142,7 @@ volumio ALL=(ALL) NOPASSWD: ALL
 # Errors Raspbian (clean image)
 - sudo apt-get update
 - sudo apt-get upgrade
+- sudo apt-get install binutils
 - sudo apt-get dist-upgrade
 - sudo shutdown -r now
 - sudo apt-get autoremove
