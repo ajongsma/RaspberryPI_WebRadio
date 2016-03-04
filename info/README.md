@@ -101,6 +101,8 @@ start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi
 - sudo systemctl start shairport-sync
 - sudo systemctl enable shairport-sync
 
+- alsamixer
+  - 85%
 
 
 ###### MPD (media player deamon)
