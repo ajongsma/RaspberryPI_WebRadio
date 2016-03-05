@@ -2,7 +2,7 @@
 
 -----
 
-# Manual install Raspbian with Volumio
+# Manual install Raspbian with rPlay
 UID: pi
 PW: raspberry
 
