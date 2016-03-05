@@ -30,6 +30,7 @@ sudo raspi-config
 - sudo apt-get -y upgrade
 
 ###### Update the firmware
+- sudo apt-get rpi-update
 - sudo rpi-update
 - sync
 - sudo reboot
