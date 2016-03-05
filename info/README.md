@@ -90,6 +90,12 @@ license_key=S1377T8072I7798N4133R
 ```
 
 -----
+# SSH Key - login with ssh key
+- Terminal
+  - ssh-keygen -t rsa -C "youremail@somewhere.com"
+  - cat ~/.ssh/id_rsa.pub | ssh pi@raspberrypi.local "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
+  - ssh pi@raspberrypi.local
+-----
 
 ###### Shairport-Sync (https://github.com/mikebrady/shairport-sync)
 - sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev
