@@ -67,10 +67,10 @@ BLANK_TIME=0
 - sudo apt-get -y install git-core
 
 ###### Install ChkConfig
-- sudo apt-get -y chkconfig
+- sudo apt-get install -y chkconfig
 
------
-
+###### Install rPlay
+- sudo apt-get install libjpeg8
 - sudo apt-get install libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl
 - wget -O rplay-1.0.1-armhf.deb http://www.vmlite.com/rplay/rplay-1.0.1-armhf.deb
 - sudo dpkg -i rplay-1.0.1-armhf.deb
@@ -80,7 +80,7 @@ BLANK_TIME=0
 - uid: admin / pw: admin
 - lic: S1377T8072I7798N4133R
 ```
-/etc/airplay.conf
+/etc/rplay.conf
 -----------------
 airplay=1
 fullscreen=0
