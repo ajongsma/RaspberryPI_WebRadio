@@ -30,7 +30,7 @@ DNS: raspberrypi.local
 - sudo apt-get -y upgrade
 
 ###### Update the firmware
-- sudo apt-get rpi-update
+- sudo apt-get install -y rpi-update
 - sudo rpi-update
 - sync
 - sudo reboot
