@@ -3,13 +3,13 @@ UID: pi
 PW: raspberry
 DNS: raspberrypi.local
 
-###### Generate local SSH Key
+###### Generate local SSH Key (local machine)
 - ssh-keygen -t rsa -C "youremail@somewhere.com"
 
-###### Install generated SSH key
+###### Install generated SSH key  (local machine)
 - cat ~/.ssh/id_rsa.pub | ssh pi@raspberrypi.local "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
 
-###### Connect via SSH
+###### Connect via SSH (local machine)
 - ssh pi@raspberrypi.local
 
 ###### Initial Raspberry Pi configuration
