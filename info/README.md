@@ -74,7 +74,7 @@ BLANK_TIME=0
 - sudo apt-get install libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl
 - wget -O rplay-1.0.1-armhf.deb http://www.vmlite.com/rplay/rplay-1.0.1-armhf.deb
 - sudo dpkg -i rplay-1.0.1-armhf.deb
-- sudo shutdown -r now
+- sudo reboot
 
 - http://raspberrypi.local:7100/admin
 - uid: admin / pw: admin
