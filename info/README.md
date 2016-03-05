@@ -53,14 +53,6 @@ network={
 - sudo ifdown wlan0
 - sudo ifup wlan0
 
-
-
-##### Turn off Console Blanking
-- sudo nano /etc/kbd/config
-```
-BLANK_TIME=0
-```
-
 -----
 
 ###### Install Git
@@ -68,6 +60,8 @@ BLANK_TIME=0
 
 ###### Install ChkConfig
 - sudo apt-get install -y chkconfig
+
+-----
 
 ###### Install rPlay
 - sudo apt-get install libjpeg8
@@ -209,6 +203,13 @@ PermitRootLogin no
 ```
 consoleblank=0
 ```
+
+##### Turn off Console Blanking
+- sudo nano /etc/kbd/config
+```
+BLANK_TIME=0
+```
+
 
 # Errors Raspbian (clean image)
 - sudo apt-get update
