@@ -12,12 +12,9 @@ DNS: raspberrypi.local
 ###### Connect via SSH
 - ssh pi@raspberrypi.local
 
-###### Resize partition
-- sudo raspi-config
-  - expand filesystem
-
 ###### Initial Raspberry Pi configuration
 - sudo raspi-config
+  - expand filesystem
   - Internationalisation Options
     - Change Locale
       - Add: en_US.UTF-8 UTF-8
