@@ -1,29 +1,32 @@
-# Other Info
-
------
-
 # Manual install Raspbian with AirPlay
 UID: pi
 PW: raspberry
+DNS: raspberrypi.local
 
-- uname -r
-  - 4.1.18-v7+
+###### Generate local SSH Key
+- ssh-keygen -t rsa -C "youremail@somewhere.com"
+
+###### Install generated SSH key
+- cat ~/.ssh/id_rsa.pub | ssh pi@raspberrypi.local "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
+
+###### Connect via SSH
+- ssh pi@raspberrypi.local
 
 ###### Resize partition
 - sudo raspi-config
   - expand filesystem
 
 ###### Initial Raspberry Pi configuration
-sudo raspi-config
-- Internationalisation Options
-  - Change Locale
-    - Add: en_US.UTF-8 UTF-8
-    - Change to: en_US.UTF-8
-  - Change TimeZone
-    - Europe
-      - Amsterdam
-  - Change WiFi Country
-    - NL
+- sudo raspi-config
+  - Internationalisation Options
+    - Change Locale
+      - Add: en_US.UTF-8 UTF-8
+      - Change to: en_US.UTF-8
+    - Change TimeZone
+      - Europe
+        - Amsterdam
+    - Change WiFi Country
+      - NL
 
 ###### Upgrade Distro
 - sudo apt-get -y update
@@ -89,12 +92,6 @@ admin_password=admin
 license_key=S1377T8072I7798N4133R
 ```
 
------
-# SSH Key - login with ssh key
-- Terminal
-  - ssh-keygen -t rsa -C "youremail@somewhere.com"
-  - cat ~/.ssh/id_rsa.pub | ssh pi@raspberrypi.local "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
-  - ssh pi@raspberrypi.local
 -----
 
 ###### Shairport-Sync (https://github.com/mikebrady/shairport-sync)
