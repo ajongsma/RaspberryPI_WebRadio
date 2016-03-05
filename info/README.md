@@ -29,11 +29,14 @@ DNS: raspberrypi.local
 - sudo apt-get -y update
 - sudo apt-get -y upgrade
 
-###### Update the firmware
+###### Install RPI Update
 - sudo apt-get install -y rpi-update
-- sudo rpi-update
-- sync
-- sudo reboot
+
+###### Install ChkConfig
+- sudo apt-get install -y chkconfig
+
+###### Install Git
+- sudo apt-get -y install git-core
 
 ###### Enable WiFi
 - sudo iwlist wlan0 scan | grep ESSID
@@ -52,14 +55,6 @@ network={
 ```
 - sudo ifdown wlan0
 - sudo ifup wlan0
-
------
-
-###### Install Git
-- sudo apt-get -y install git-core
-
-###### Install ChkConfig
-- sudo apt-get install -y chkconfig
 
 -----
 
@@ -132,8 +127,6 @@ Note: set's the alsamixer to 85%
 ###### samba
 - sudo apt-get -y install samba samba-common-bin
 
-
-
 ###### Install Volumio
 - export GIT_SSL_NO_VERIFY=1
 - sudo rm -rf /var/www
@@ -147,7 +140,6 @@ Note: set's the alsamixer to 85%
 - sudo cp -arp /var/www/_OS_SETTINGS/etc/ /
 - sudo cp -arp /var/www/_OS_SETTINGS/home/ /
 - sudo reboot
-
 
 ###### Install Spotify (https://github.com/Schnouki/spop)
 - wget -q -O - http://apt.mopidy.com/mopidy.gpg | sudo apt-key add -
@@ -210,6 +202,10 @@ consoleblank=0
 BLANK_TIME=0
 ```
 
+###### Update firmware
+- sudo rpi-update
+- sync
+- sudo reboot
 
 # Errors Raspbian (clean image)
 - sudo apt-get update
