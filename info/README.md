@@ -68,6 +68,28 @@ BLANK_TIME=0
 ###### Install ChkConfig
 - sudo apt-get -y chkconfig
 
+-----
+
+- sudo apt-get install libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl
+- wget -O rplay-1.0.1-armhf.deb http://www.vmlite.com/rplay/rplay-1.0.1-armhf.deb
+- sudo dpkg -i rplay-1.0.1-armhf.deb
+- sudo shutdown -r now
+
+- http://raspberrypi.local:7100/admin
+- uid: admin / pw: admin
+- lic: S1377T8072I7798N4133R
+```
+/etc/airplay.conf
+-----------------
+airplay=1
+fullscreen=0
+onscreen_code=0
+admin_password=admin
+license_key=S1377T8072I7798N4133R
+```
+
+-----
+
 ###### Shairport-Sync (https://github.com/mikebrady/shairport-sync)
 - sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev
 - sudo apt-get -y install avahi-daemon libavahi-client-dev
