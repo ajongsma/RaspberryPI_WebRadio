@@ -130,9 +130,10 @@ start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi
 - sudo systemctl start shairport-sync
 - sudo systemctl enable shairport-sync
 
-- alsamixer
-  - 85%
-
+- amixer sset "PCM" 95%
+```
+Note: set's the alsamixer to 85%
+```
 
 ###### MPD (media player deamon)
 - sudo apt-get -y install alsa-utils mpd mpc
