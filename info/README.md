@@ -2,7 +2,7 @@
 
 -----
 
-# Manual install Raspbian with rPlay
+# Manual install Raspbian with AirPlay
 UID: pi
 PW: raspberry
 
