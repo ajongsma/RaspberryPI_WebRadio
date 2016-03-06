@@ -86,35 +86,18 @@ network={
 
 - ## ERROR - sudo update-rc.d shairport-sync defaults 90 10
 - sudo systemctl enable shairport-sync
-- // sudo nano /lib/systemd/system/shairport-sync.service
-
-
-
-- sudo nano /etc/shairport-sync.conf
 ```
-general = {
-  name = "Pi";
-};
-
-alsa = {
-  output_device = "hw:1";
-  mixer_control_name = "PCM";
-};
-```
-- sudo cp shairport-sync.in /etc/init.d/shairport-sync
-```
-start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi" -- -d hw:1 -t hardware -c "PCM" || return 2
+Creates: /lib/systemd/system/shairport-sync.service
 ```
 - sudo systemctl start shairport-sync
 - systemctl status shairport-sync
-- sudo systemctl enable shairport-sync
 
-####### 2) - http://komputermaschine.blogspot.nl/2015/03/raspberry-als-shairport-empfanger-2015.html
-- nano /etc/systemd/system/shairport-sync.service
-- systemctl enable shairport-sync.service
-- systemctl start shairport-sync.service
-- systemctl status shairport-sync.service
 
+
+```
+- http://komputermaschine.blogspot.nl/2015/03/raspberry-als-shairport-empfanger-2015.html
+start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi" -- -d hw:1 -t hardware -c "PCM" || return 2
+```
 
 ```
 Other notes:
