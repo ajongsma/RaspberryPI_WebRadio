@@ -87,6 +87,7 @@ Creates: /lib/systemd/system/shairport-sync.service
 ```
 - sudo systemctl start shairport-sync
 - systemctl status shairport-sync
+- sudo reboot
 
 ```
 Other notes:
