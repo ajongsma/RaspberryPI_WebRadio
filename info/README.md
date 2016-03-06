@@ -88,13 +88,6 @@ Creates: /lib/systemd/system/shairport-sync.service
 - sudo systemctl start shairport-sync
 - systemctl status shairport-sync
 
-
-
-```
-- http://komputermaschine.blogspot.nl/2015/03/raspberry-als-shairport-empfanger-2015.html
-start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi" -- -d hw:1 -t hardware -c "PCM" || return 2
-```
-
 ```
 Other notes:
 - shairport-sync -V
@@ -122,6 +115,11 @@ Other notes:
   -         card 0
   - }
 - mplayer -ao alsa:device=bluetooth audiofile.mp3
+
+- http://komputermaschine.blogspot.nl/2015/03/raspberry-als-shairport-empfanger-2015.html
+
+- start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi" -- -d hw:1 -t hardware -c "PCM" || return 2
+
 ```
 
 
