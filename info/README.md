@@ -128,6 +128,7 @@ Other notes:
 - shairport-sync -vv
 
 - Avahi provides the Zeroconf service needed to make the AirPlay service visible on the network.
+- avahi-browse -ar
 
 - aplay -l
 
