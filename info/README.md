@@ -56,6 +56,9 @@ network={
 - sudo ifdown wlan0
 - sudo ifup wlan0
 
+####### Set alsamixer volume to 85%
+- amixer sset "PCM" 95%
+
 -----
 
 ###### Install rPlay
@@ -86,19 +89,30 @@ license_key=S1377T8072I7798N4133R
 
 ###### Install Shairport-Sync
 - cd ~
-- sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev
+- ## sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev
+- sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev libsoxr-dev libshairport2 
 - git clone https://github.com/mikebrady/shairport-sync.git
 - cd shairport-sync
 - autoreconf -i -f
-- ./configure --with-alsa --with-avahi --with-ssl=openssl --with-metadata --with-systemd
+- ## ./configure --with-alsa --with-avahi --with-ssl=openssl --with-metadata --with-systemd
+- ./configure --with-alsa --with-avahi --with-ssl=openssl --with-metadata --with-soxr --with-systemd
 - make
-- getent group shairport-sync &>/dev/null || sudo groupadd -r shairport-sync >/dev/null
-- getent passwd shairport-sync &> /dev/null || sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync >/dev/null
+- ./shairport-sync --version
+```
+2.8.1-openssl-Avahi-ALSA-soxr-metadata
+```
+- ## getent group shairport-sync &>/dev/null || sudo groupadd -r shairport-sync >/dev/null
+- getent group shairport-sync || sudo groupadd -r shairport-sync
+- ## getent passwd shairport-sync &> /dev/null || sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync >/dev/null
+- getent passwd shairport-sync || sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync
 - sudo make install
 
-####### 1)
-- sudo update-rc.d shairport-sync defaults 90 10
+- ## ERROR - sudo update-rc.d shairport-sync defaults 90 10
 - sudo systemctl enable shairport-sync
+- // sudo nano /lib/systemd/system/shairport-sync.service
+
+
+
 - sudo nano /etc/shairport-sync.conf
 ```
 general = {
@@ -115,6 +129,7 @@ alsa = {
 start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi" -- -d hw:1 -t hardware -c "PCM" || return 2
 ```
 - sudo systemctl start shairport-sync
+- systemctl status shairport-sync
 - sudo systemctl enable shairport-sync
 
 ####### 2) - http://komputermaschine.blogspot.nl/2015/03/raspberry-als-shairport-empfanger-2015.html
@@ -122,9 +137,6 @@ start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi
 - systemctl enable shairport-sync.service
 - systemctl start shairport-sync.service
 - systemctl status shairport-sync.service
-
-####### Set alsamixer volume to 85%
-- amixer sset "PCM" 95%
 
 
 ```
