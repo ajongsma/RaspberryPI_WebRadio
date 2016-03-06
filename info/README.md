@@ -129,6 +129,8 @@ Other notes:
 
 - Avahi provides the Zeroconf service needed to make the AirPlay service visible on the network.
 
+- aplay -l
+
 - File: .asoundrc
   - pcm.!default {
   -         type hw
