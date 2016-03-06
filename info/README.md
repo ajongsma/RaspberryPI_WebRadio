@@ -126,6 +126,8 @@ Note: set's the alsamixer to 85%
 Other notes:
 - shairport-sync -V
 - shairport-sync -vv
+
+- Avahi provides the Zeroconf service needed to make the AirPlay service visible on the network.
 ```
 
 
