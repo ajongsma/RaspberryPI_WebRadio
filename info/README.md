@@ -118,6 +118,7 @@ Other notes:
 - mplayer -ao alsa:device=bluetooth audiofile.mp3
 
 - http://komputermaschine.blogspot.nl/2015/03/raspberry-als-shairport-empfanger-2015.html
+- http://qiita.com/yuyakato/items/600f499cf0610bfc1a16
 
 - start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi" -- -d hw:1 -t hardware -c "PCM" || return 2
 
