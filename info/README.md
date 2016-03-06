@@ -79,12 +79,14 @@ license_key=S1377T8072I7798N4133R
 ```
 
 -----
+##### Shairport-Sync (https://github.com/mikebrady/shairport-sync)
 
-###### Shairport-Sync (https://github.com/mikebrady/shairport-sync)
-- sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev
-- sudo apt-get -y install avahi-daemon libavahi-client-dev
-- sudo apt-get -y install libssl-dev
+###### Speaker test
+- speaker-test -t sine
+
+###### Install Shairport-Sync
 - cd ~
+- sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev
 - git clone https://github.com/mikebrady/shairport-sync.git
 - cd shairport-sync
 - autoreconf -i -f
