@@ -61,27 +61,6 @@ network={
 
 -----
 
-###### Install rPlay
-- sudo apt-get -y install libjpeg8
-- sudo apt-get -y install libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl
-- wget -O rplay-1.0.1-armhf.deb http://www.vmlite.com/rplay/rplay-1.0.1-armhf.deb
-- sudo dpkg -i rplay-1.0.1-armhf.deb
-- sudo reboot
-
-- http://raspberrypi.local:7100/admin
-- uid: admin / pw: admin
-- lic: S1377T8072I7798N4133R
-```
-/etc/rplay.conf
------------------
-airplay=1
-fullscreen=0
-onscreen_code=0
-admin_password=admin
-license_key=S1377T8072I7798N4133R
-```
-
------
 ##### Shairport-Sync (https://github.com/mikebrady/shairport-sync)
 
 ###### Speaker test
@@ -257,6 +236,30 @@ BLANK_TIME=0
 - sudo rpi-update
 - sync
 - sudo reboot
+
+-----
+
+###### Install rPlay
+- sudo apt-get -y install libjpeg8
+- sudo apt-get -y install libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl
+- wget -O rplay-1.0.1-armhf.deb http://www.vmlite.com/rplay/rplay-1.0.1-armhf.deb
+- sudo dpkg -i rplay-1.0.1-armhf.deb
+- sudo reboot
+
+- http://raspberrypi.local:7100/admin
+- uid: admin / pw: admin
+- lic: S1377T8072I7798N4133R
+```
+/etc/rplay.conf
+-----------------
+airplay=1
+fullscreen=0
+onscreen_code=0
+admin_password=admin
+license_key=S1377T8072I7798N4133R
+```
+
+-----
 
 # Errors Raspbian (clean image)
 - sudo apt-get update
