@@ -128,6 +128,24 @@ Other notes:
 - shairport-sync -vv
 
 - Avahi provides the Zeroconf service needed to make the AirPlay service visible on the network.
+
+- File: .asoundrc
+  - pcm.!default {
+  -         type hw
+  -         card 0
+  - }
+  - 
+  - pcm.bluetooth {
+  -         type bluetooth
+  -         device 00:xx:xx:xx:xx:xx // my actual mac address is here, but you know
+  -         profile "auto"
+  - }
+  - 
+  - ctl.!default {
+  -         type hw
+  -         card 0
+  - }
+- mplayer -ao alsa:device=bluetooth audiofile.mp3
 ```
 
 
