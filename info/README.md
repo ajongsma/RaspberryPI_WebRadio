@@ -95,10 +95,10 @@ license_key=S1377T8072I7798N4133R
 - getent group shairport-sync &>/dev/null || sudo groupadd -r shairport-sync >/dev/null
 - getent passwd shairport-sync &> /dev/null || sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync >/dev/null
 - sudo make install
+
+####### 1)
 - sudo update-rc.d shairport-sync defaults 90 10
-
 - sudo systemctl enable shairport-sync
-
 - sudo nano /etc/shairport-sync.conf
 ```
 general = {
@@ -117,10 +117,15 @@ start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi
 - sudo systemctl start shairport-sync
 - sudo systemctl enable shairport-sync
 
+####### 2) - http://komputermaschine.blogspot.nl/2015/03/raspberry-als-shairport-empfanger-2015.html
+- nano /etc/systemd/system/shairport-sync.service
+- systemctl enable shairport-sync.service
+- systemctl start shairport-sync.service
+- systemctl status shairport-sync.service
+
+####### Set alsamixer volume to 85%
 - amixer sset "PCM" 95%
-```
-Note: set's the alsamixer to 85%
-```
+
 
 ```
 Other notes:
