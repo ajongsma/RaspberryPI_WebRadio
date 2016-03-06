@@ -95,6 +95,8 @@ license_key=S1377T8072I7798N4133R
 - getent group shairport-sync &>/dev/null || sudo groupadd -r shairport-sync >/dev/null
 - getent passwd shairport-sync &> /dev/null || sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync >/dev/null
 - sudo make install
+- sudo update-rc.d shairport-sync defaults 90 10
+
 - sudo systemctl enable shairport-sync
 
 - sudo nano /etc/shairport-sync.conf
