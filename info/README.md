@@ -78,13 +78,9 @@ network={
 ```
 2.8.1-openssl-Avahi-ALSA-soxr-metadata
 ```
-- ## getent group shairport-sync &>/dev/null || sudo groupadd -r shairport-sync >/dev/null
 - getent group shairport-sync || sudo groupadd -r shairport-sync
-- ## getent passwd shairport-sync &> /dev/null || sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync >/dev/null
 - getent passwd shairport-sync || sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync
 - sudo make install
-
-- ## ERROR - sudo update-rc.d shairport-sync defaults 90 10
 - sudo systemctl enable shairport-sync
 ```
 Creates: /lib/systemd/system/shairport-sync.service
