@@ -68,12 +68,10 @@ network={
 
 ###### Install Shairport-Sync
 - cd ~
-- ## sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev
 - sudo apt-get -y install autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev libsoxr-dev libshairport2 
 - git clone https://github.com/mikebrady/shairport-sync.git
 - cd shairport-sync
 - autoreconf -i -f
-- ## ./configure --with-alsa --with-avahi --with-ssl=openssl --with-metadata --with-systemd
 - ./configure --with-alsa --with-avahi --with-ssl=openssl --with-metadata --with-soxr --with-systemd
 - make
 - ./shairport-sync --version
