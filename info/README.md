@@ -59,8 +59,8 @@ network={
 -----
 
 ###### Install rPlay
-- sudo apt-get install libjpeg8
-- sudo apt-get install libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl
+- sudo apt-get -y install libjpeg8
+- sudo apt-get -y install libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl
 - wget -O rplay-1.0.1-armhf.deb http://www.vmlite.com/rplay/rplay-1.0.1-armhf.deb
 - sudo dpkg -i rplay-1.0.1-armhf.deb
 - sudo reboot
