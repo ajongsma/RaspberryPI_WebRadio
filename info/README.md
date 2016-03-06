@@ -122,6 +122,13 @@ start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi
 Note: set's the alsamixer to 85%
 ```
 
+```
+Other notes:
+- shairport-sync -V
+- shairport-sync -vv
+```
+
+
 ###### MPD (media player deamon)
 - sudo apt-get -y install alsa-utils mpd mpc
 
