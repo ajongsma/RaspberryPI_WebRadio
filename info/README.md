@@ -66,6 +66,7 @@ network={
 ## Shairport-Sync (https://github.com/mikebrady/shairport-sync)
 
 ###### Speaker test
+- alsamixer
 - speaker-test -t sine
 
 ###### Install Shairport-Sync
@@ -161,10 +162,6 @@ Other notes:
 - sudo apt-get install libjson-glib-dev libao-dev libdbus-glib-1-dev libnotify-dev libsoup2.4-dev libsox-dev libspotify-dev
 - git clone git://github.com/Schnouki/spop.git ~/.config/spop
 - cp ~/.config/spop/spopd.conf.sample ~/.config/spop/spopd.conf
-
-###### Audio test
-- alsamixer
-- speaker-test -t sine
 
 ###### Add User
 - sudo su -
