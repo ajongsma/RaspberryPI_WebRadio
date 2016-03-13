@@ -153,16 +153,10 @@ Other notes:
 
 ```
 Notes:
-Direct audio output to HDMI
-$ sudo amixer cset numid=3 2
 
-Direct audio output to 3.5
-$ sudo amixer cset numid=3 1
-
-
-$ tvservice -s
-
-
+# cset: the last number determines which way the audio output goes: 0 = automatic (system default), 1 = headphone, 2 = hdmi.
+Direct audio output to HDMI -> $ sudo amixer cset numid=3 2
+Direct audio output to 3.5 -> $ sudo amixer cset numid=3 1
 ```
 
 ###### MPD (media player deamon)
