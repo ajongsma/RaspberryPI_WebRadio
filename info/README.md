@@ -128,6 +128,11 @@ Other notes:
 ```
 
 -----
+# References
+
+- http://www.instructables.com/id/Raspberry-Pi-Music-Server-With-Built-in-Crossover-/?ALLSTEPS
+
+-----
 
 # Experimental
 
