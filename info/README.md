@@ -61,6 +61,12 @@ network={
 ####### Set alsamixer volume to 85%
 - amixer sset "PCM" 95%
 
+###### HDMI Info
+- Get supported audio information
+  - tvservice -a
+- Get HDMI status
+  - tvservice -s
+
 ####### Test the audio
 - sudo apt-get -y install alsa-base alsa-utils alsa-tools libasound2-plugins
 - sudo apt-get -y install ecasound
