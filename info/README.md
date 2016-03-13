@@ -68,18 +68,10 @@ network={
   - tvservice -s
 
 ####### Test the audio
-- sudo apt-get -y install alsa-base alsa-utils alsa-tools libasound2-plugins
-- sudo apt-get -y install ecasound
-- sudo apt-get -y install ladspa-sdk
-- mkdir -p ~/Downloads && cd ~/Downloads
-- wget http://faculty.tru.ca/rtaylor/rt-plugins/chan_labels_6.wav
-
 - Test with 2 speakers and a default sample rate
   - speaker-test -c2 -D default
 - Test with 7 speakers and a sample rate of 48khz 
   - speaker-test -c 7 -r 48000
-- ecasound -z:mixmode,sum -a:all -tl -i chan_labels_6.wav -a:woofer -efl:300 -efl:300 -chorder:1,1,0,0,0,0,0,1 -a:woofer -f:16,8,44100 -o:alsahw,0,0 -z:nodb -b:2048
-
 
 ```
 Speaker test
@@ -87,7 +79,7 @@ Speaker test
 - speaker-test -t sine
 ```
 
-## Shairport-Sync (https://github.com/mikebrady/shairport-sync)
+## Install Shairport-Sync (https://github.com/mikebrady/shairport-sync)
 
 ###### Install Shairport-Sync
 - cd ~
@@ -234,6 +226,15 @@ PermitRootLogin no
 - sudo apt-get update
 - sudo apt-get install mpd
 - sudo service mpd restart
+
+###### ecasound
+- sudo apt-get -y install alsa-base alsa-utils alsa-tools libasound2-plugins
+- sudo apt-get -y install ecasound
+- sudo apt-get -y install ladspa-sdk
+- mkdir -p ~/Downloads && cd ~/Downloads
+- wget http://faculty.tru.ca/rtaylor/rt-plugins/chan_labels_6.wav
+
+- ecasound -z:mixmode,sum -a:all -tl -i chan_labels_6.wav -a:woofer -efl:300 -efl:300 -chorder:1,1,0,0,0,0,0,1 -a:woofer -f:16,8,44100 -o:alsahw,0,0 -z:nodb -b:2048
 
 ###### BlueTooth
 - sudo apt-get install pi-bluetooth
