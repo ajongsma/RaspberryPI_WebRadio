@@ -130,8 +130,8 @@ Other notes:
 -----
 # References
 
-- [ Raspberry-Pi-Music-Server-With-Built-in-Crossover ] (http://www.instructables.com/id/Raspberry-Pi-Music-Server-With-Built-in-Crossover-/?ALLSTEPS)
-- [ ApplePi-Baker] (http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker)
+- [ Raspberry Pi Music Server With Built in Crossover ] (http://www.instructables.com/id/Raspberry-Pi-Music-Server-With-Built-in-Crossover-/?ALLSTEPS)
+- [ ApplePi Baker] (http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker)
 
 -----
 
