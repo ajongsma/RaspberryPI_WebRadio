@@ -65,7 +65,7 @@ network={
 
 -----
 
-##### Shairport-Sync (https://github.com/mikebrady/shairport-sync)
+## Shairport-Sync (https://github.com/mikebrady/shairport-sync)
 
 ###### Speaker test
 - speaker-test -t sine
