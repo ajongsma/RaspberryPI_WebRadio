@@ -74,6 +74,7 @@ network={
   - speaker-test -c 7 -r 48000
 - ecasound -z:mixmode,sum -a:all -tl -i chan_labels_6.wav -a:woofer -efl:300 -efl:300 -chorder:1,1,0,0,0,0,0,1 -a:woofer -f:16,8,44100 -o:alsahw,0,0 -z:nodb -b:2048
 
+
 ```
 Speaker test
 - alsamixer
