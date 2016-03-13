@@ -124,6 +124,11 @@ Other notes:
 
 ```
 
+-----
+
+# Experimental
+
+-----
 
 ###### MPD (media player deamon)
 - sudo apt-get -y install alsa-utils mpd mpc
