@@ -63,8 +63,6 @@ network={
 ####### Set alsamixer volume to 85%
 - amixer sset "PCM" 95%
 
------
-
 ## Shairport-Sync (https://github.com/mikebrady/shairport-sync)
 
 ###### Speaker test
