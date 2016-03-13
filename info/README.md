@@ -3,6 +3,10 @@ UID: pi
 PW: raspberry
 DNS: raspberrypi.local
 
+-----
+
+##### Defaults
+
 ###### Generate local SSH Key (local machine)
 - ssh-keygen -t rsa -C "youremail@somewhere.com"
 
