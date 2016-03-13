@@ -1,10 +1,5 @@
 # Manual install Raspbian with AirPlay
-
-| UserID | Password | DNS |
-| --- | --- |
-| pi | raspberry | raspberrypi.local |
-
-> UID: pi     PW: raspberry     DNS: raspberrypi.local
+UID: pi     PW: raspberry     DNS: raspberrypi.local
 
 -----
 
