@@ -63,6 +63,11 @@ network={
 ####### Set alsamixer volume to 85%
 - amixer sset "PCM" 95%
 
+> Speaker test
+> - alsamixer
+> - speaker-test -t sine
+
+
 ```
 Speaker test
 - alsamixer
