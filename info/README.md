@@ -61,6 +61,16 @@ network={
 ####### Set alsamixer volume to 85%
 - amixer sset "PCM" 95%
 
+####### Test the audio
+- sudo apt-get -y install alsa-base alsa-utils alsa-tools libasound2-plugins
+- sudo apt-get -y install ecasound
+- sudo apt-get -y install ladspa-sdk
+- mkdir -p ~/Downloads && cd ~/Downloads
+- wget http://faculty.tru.ca/rtaylor/rt-plugins/chan_labels_6.wav
+
+- speaker-test -c 8 -r 48000
+- ecasound -z:mixmode,sum -a:all -tl -i chan_labels_6.wav -a:woofer -efl:300 -efl:300 -chorder:1,1,0,0,0,0,0,1 -a:woofer -f:16,8,44100 -o:alsahw,0,0 -z:nodb -b:2048
+
 ```
 Speaker test
 - alsamixer
