@@ -132,11 +132,27 @@ Other notes:
 
 - http://www.instructables.com/id/Raspberry-Pi-Music-Server-With-Built-in-Crossover-/?ALLSTEPS
 
+- [ ApplePi-Baker] (http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker)
+
 -----
 
 # Experimental
 
 -----
+
+```
+Notes:
+Direct audio output to HDMI
+$ sudo amixer cset numid=3 2
+
+Direct audio output to 3.5
+$ sudo amixer cset numid=3 1
+
+
+$ tvservice -s
+
+
+```
 
 ###### MPD (media player deamon)
 - sudo apt-get -y install alsa-utils mpd mpc
