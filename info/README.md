@@ -136,8 +136,45 @@ Other notes:
 - http://qiita.com/yuyakato/items/600f499cf0610bfc1a16
 
 - start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- -d -a "Pi" -- -d hw:1 -t hardware -c "PCM" || return 2
+```
+
+## Install Spotify
+
+###### Install spop (https://github.com/Schnouki/spop)
+- cd ~
+
+- wget -q -O - http://apt.mopidy.com/mopidy.gpg | sudo apt-key add -
+- echo -e "deb http://apt.mopidy.com/ stable main contrib non-free\ndeb-src http://apt.mopidy.com/ stable main contrib non-free" | sudo tee /etc/apt/sources.list.d/mopidy.list
+- sudo apt-get update
+- sudo apt-get install libjson-glib-dev libao-dev libdbus-glib-1-dev libnotify-dev libsoup2.4-dev libsox-dev libspotify-dev
+
+- sudo apt-get -y install cmake telnet
+- git clone git://github.com/Schnouki/spop.git
+- mkdir -p ~/.config/spop
+- cp spop/spopd.conf.sample ~/.config/spop/spopd.conf
+- nano ~/.config/spop/spopd.conf
+```
+spotify_username = <Spotify Username>
+spotify_password = <Spotify Password>
+audio_output = ao
+log_file = /home/pi/spopd.log
 
 ```
+- cd ~/spop
+- cmake -DCMAKE_INSTALL_PREFIX=/home/pi/spop
+- make
+- sudo make install
+
+- LD_LIBRARY_PATH=/home/pi/spop/lib /home/pi/spop/bin/spopd
+- telnet localhost 6602
+```
+trying ::1...
+Connected to localhost.
+Escape character is '^]'.
+spop 0.0.1
+```
+
+
 
 -----
 # References
