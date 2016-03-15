@@ -142,7 +142,6 @@ Other notes:
 
 ###### Install spop (https://github.com/Schnouki/spop)
 - cd ~
-
 - wget -q -O - http://apt.mopidy.com/mopidy.gpg | sudo apt-key add -
 - echo -e "deb http://apt.mopidy.com/ stable main contrib non-free\ndeb-src http://apt.mopidy.com/ stable main contrib non-free" | sudo tee /etc/apt/sources.list.d/mopidy.list
 - sudo apt-get update
@@ -174,7 +173,19 @@ Escape character is '^]'.
 spop 0.0.1
 ```
 
-
+Install spop Web (https://github.com/xemle/spop-web)
+- cd ~
+- sudo apt-get -yinstall npm
+- git clone https://github.com/xemle/spop-web.git
+- cd spop-web
+- sudo npm install -g bower gulp-cli
+- npm install
+- bower install
+- gulp
+- node index.js
+```
+Open your browser at http://raspberrypi.local:3000
+```
 
 -----
 # References
