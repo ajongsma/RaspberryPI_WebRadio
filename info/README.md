@@ -178,8 +178,9 @@ Install spop Web (https://github.com/xemle/spop-web)
 - sudo apt-get -yinstall npm
 - git clone https://github.com/xemle/spop-web.git
 - cd spop-web
+- sudo apt-get -y install node
 - sudo npm install -g bower gulp-cli
-- npm install
+- sudo npm install
 - bower install
 - gulp
 - node index.js
