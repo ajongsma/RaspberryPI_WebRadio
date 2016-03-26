@@ -41,4 +41,4 @@ Note:
 ##### Other
 - /opt/vc/bin/tvservice
   - Error: error while loading shared libraries: libvchiq_arm.so: cannot open shared object file: No such file or directory
-
+  - > LD_LIBRARY_PATH=/opt/vc/lib /opt/vc/bin/tvservice
