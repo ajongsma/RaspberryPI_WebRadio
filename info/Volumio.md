@@ -21,7 +21,9 @@ UID: volumio     PW: volumio     DNS: volumio.local
 
 ###### Making Pi discoverable to Macs while Avahi isn't working.
 - sudo apt-get install netatalk
+
 -----
+
 ## Errors - perl: warning: Setting locale failed.
 
 ###### Install Locales
