@@ -16,3 +16,5 @@ UID: volumio     PW: volumio     DNS: volumio.local
 
 -----
 
+###### Enable WiFi
+- http://volumio.local/plugin/system_controller-network
