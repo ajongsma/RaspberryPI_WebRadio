@@ -54,3 +54,6 @@ Note:
 	/lib/ld-linux-armhf.so.3 (0x54b5d000)
   ```
   - $ export LD_LIBRARY_PATH=/opt/vc/lib/:LD_LIBRARY_PATH
+
+## Info
+- https://yabb.jriver.com/interact/index.php?topic=97510.0
