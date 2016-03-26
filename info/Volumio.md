@@ -53,4 +53,4 @@ $ ldd /opt/vc/bin/tvservice
 	libc.so.6 => /lib/arm-linux-gnueabihf/libc.so.6 (0x76d97000)
 	/lib/ld-linux-armhf.so.3 (0x54b5d000)
 ```
-  - $ LD_LIBRARY_PATH=/opt/vc/lib /opt/vc/bin/tvservice
+  - $ export LD_LIBRARY_PATH=/opt/vc/lib/:LD_LIBRARY_PATH
