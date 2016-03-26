@@ -41,4 +41,16 @@ Note:
 ##### Other
 - /opt/vc/bin/tvservice
   - Error: error while loading shared libraries: libvchiq_arm.so: cannot open shared object file: No such file or directory
+```
+$ ldd /opt/vc/bin/tvservice
+
+	linux-vdso.so.1 (0x7ec0a000)
+	libvchiq_arm.so => not found
+	libvcos.so => not found
+	libpthread.so.0 => /lib/arm-linux-gnueabihf/libpthread.so.0 (0x76f02000)
+	libdl.so.2 => /lib/arm-linux-gnueabihf/libdl.so.2 (0x76eef000)
+	librt.so.1 => /lib/arm-linux-gnueabihf/librt.so.1 (0x76ed8000)
+	libc.so.6 => /lib/arm-linux-gnueabihf/libc.so.6 (0x76d97000)
+	/lib/ld-linux-armhf.so.3 (0x54b5d000)
+```
   - $ LD_LIBRARY_PATH=/opt/vc/lib /opt/vc/bin/tvservice
