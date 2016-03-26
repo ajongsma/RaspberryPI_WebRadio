@@ -20,7 +20,7 @@ UID: volumio     PW: volumio     DNS: volumio.local
 - http://volumio.local/plugin/system_controller-network
 
 -----
-# ERROR - perl: warning: Setting locale failed.
+## Errors - perl: warning: Setting locale failed.
 
 ###### Install Locales
 sudo apt-get install locales
