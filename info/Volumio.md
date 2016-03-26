@@ -23,4 +23,4 @@ UID: volumio     PW: volumio     DNS: volumio.local
 ## Errors - perl: warning: Setting locale failed.
 
 ###### Install Locales
-sudo apt-get install locales
+- sudo apt-get install locales
