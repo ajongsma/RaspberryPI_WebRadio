@@ -1,6 +1,13 @@
 # Manual addendums Volumio
 UID: volumio     PW: volumio     DNS: volumio.local
 
+```
+Note:
+2 stereo PCM channels, resulting in 2 audio channels
+2 AC3 "data" channels, resulting in a 5.1 audio signal
+2 DTS "data" channels, resulting in a 5.1 audio signal
+```
+
 -----
 
 ## Defaults
