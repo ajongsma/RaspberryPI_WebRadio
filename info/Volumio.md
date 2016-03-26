@@ -19,7 +19,7 @@ UID: volumio     PW: volumio     DNS: volumio.local
 ###### Enable WiFi
 - http://volumio.local/plugin/system_controller-network
 
-###### Making Pi discoverable to Macs via Finder while Avahi isn't working.
+###### Making Pi discoverable to Macs via Finder > Shared while Avahi isn't working.
 - sudo apt-get install netatalk
 
 -----
