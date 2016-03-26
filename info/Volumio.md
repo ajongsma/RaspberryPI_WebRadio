@@ -25,4 +25,4 @@ UID: volumio     PW: volumio     DNS: volumio.local
 ###### Install Locales
 - sudo apt-get install locales
 - sudo dpkg-reconfigure locales
-  - Enable and select: en_US.UTF-8",
+  - Enable and select: en_US.UTF-8
