@@ -29,6 +29,9 @@ Note:
 - sudo dpkg-reconfigure locales
   - Enable and select: en_US.UTF-8
 
+###### Set Time Zone
+- sudo dpkg-reconfigure tzdata
+
 ###### Install - Wireless-regdb
 - sudo apt-get update
 - sudo apt-get -y install wireless-regdb crda
