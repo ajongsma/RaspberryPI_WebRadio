@@ -30,8 +30,8 @@ Note:
   - Enable and select: en_US.UTF-8
 
 ###### Install - Wireless-regdb
-- apg-get update
-- apt-get -y install wireless-regdb crda
+- sudo apt-get update
+- sudo apt-get -y install wireless-regdb crda
 
 ###### Enable WiFi
 - sudo iwlist wlan0 scan | grep ESSID
