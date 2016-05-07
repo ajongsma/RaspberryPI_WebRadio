@@ -24,6 +24,8 @@ Note:
 -----
 
 ###### Install - perl: Locales.
+? sudo dpkg-reconfigure locales
+
 - sudo apt-get update
 - sudo apt-get install locales
 - sudo dpkg-reconfigure locales
