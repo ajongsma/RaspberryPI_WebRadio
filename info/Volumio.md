@@ -23,11 +23,16 @@ Note:
 
 -----
 
+###### Update wireless-regdb
+- apg-get update
+- apt-get -y install wireless-regdb crda
+
 ###### Enable WiFi
 - http://volumio.local/plugin/system_controller-network
 
 ###### Making Pi discoverable to OS X via Finder > Shared while Avahi isn't working.
 - sudo apt-get install netatalk
+
 
 -----
 
