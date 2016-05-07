@@ -24,6 +24,7 @@ Note:
 -----
 
 ###### Install - perl: Locales.
+- sudo apt-get update
 - sudo apt-get install locales
 - sudo dpkg-reconfigure locales
   - Enable and select: en_US.UTF-8
