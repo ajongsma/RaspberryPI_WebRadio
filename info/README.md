@@ -90,6 +90,8 @@ network={
 - sudo apt-get install wavemon
   - sudo wavemon
 
+###### vcgencmd - Error: VCHI initialization failed (https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=34076)
+- sudo usermod -G video volumio 
 
 ## Info
 - https://yabb.jriver.com/interact/index.php?topic=97510.0
