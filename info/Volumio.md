@@ -23,7 +23,12 @@ Note:
 
 -----
 
-###### Update wireless-regdb
+###### Install - perl: Locales.
+- sudo apt-get install locales
+- sudo dpkg-reconfigure locales
+  - Enable and select: en_US.UTF-8
+
+###### Install - Wireless-regdb
 - apg-get update
 - apt-get -y install wireless-regdb crda
 
@@ -37,11 +42,6 @@ Note:
 -----
 
 ## Errors 
-
-###### perl: warning: Setting locale failed.
-- sudo apt-get install locales
-- sudo dpkg-reconfigure locales
-  - Enable and select: en_US.UTF-8
 
 ##### Other
 - /opt/vc/bin/tvservice
