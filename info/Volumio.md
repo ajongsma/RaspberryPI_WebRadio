@@ -33,7 +33,25 @@ Note:
 - apt-get -y install wireless-regdb crda
 
 ###### Enable WiFi
-- http://volumio.local/plugin/system_controller-network
+- sudo iwlist wlan0 scan | grep ESSID
+- sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+```
+country=NL
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="The_ESSID_from_earlier"
+    psk="Your_wifi_password"
+    key_mgmt=WPA-PSK
+}
+```
+- sudo ifdown wlan0
+- sudo ifup wlan0
+
+####### Set alsamixer volume to 85%
+- amixer sset "PCM" 95%
 
 ###### Making Pi discoverable to OS X via Finder > Shared while Avahi isn't working.
 - sudo apt-get install netatalk
