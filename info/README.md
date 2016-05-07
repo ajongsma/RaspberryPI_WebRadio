@@ -79,5 +79,12 @@ network={
   ```
   - $ export LD_LIBRARY_PATH=/opt/vc/lib/:LD_LIBRARY_PATH
 
+## Extra
+
+###### WiFi Scanner
+- sudo apt-get install wavemon
+  - sudo wavemon
+
+
 ## Info
 - https://yabb.jriver.com/interact/index.php?topic=97510.0
